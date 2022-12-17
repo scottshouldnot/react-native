@@ -3,7 +3,6 @@ import { Card } from 'react-native-elements';
 import { useSelector } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
 
-
 const FeaturedItem = ({ item }) => {
     if (item) {
         return (
