@@ -155,7 +155,7 @@ const RegisterTab = () => {
     };
 
     const getImageFromGallery = async () => {
-        const mediaLibraryPermissions = 
+        const mediaLibraryPermissions =
             await ImagePicker.requestMediaLibraryPermissionsAsync();
 
         if (mediaLibraryPermissions.status === 'granted') {
@@ -173,9 +173,9 @@ const RegisterTab = () => {
 
     const processImage = async (imgUri) => {
         const processedImage = await ImageManipulator.manipulateAsync(imgUri, [
-            {resize: {width: 400}}
+            { resize: { width: 400 } }
         ],
-        {format: ImageManipulator.SaveFormat.PNG}
+            { format: ImageManipulator.SaveFormat.PNG }
         );
 
         console.log(processedImage);
